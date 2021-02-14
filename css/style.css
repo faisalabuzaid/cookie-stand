@@ -1,6 +1,3 @@
-* {
-  font-family: 'Roboto Mono', monospace;
-  }
   body {
     background-color: #f3f3f3;
   }
@@ -31,9 +28,12 @@
     margin-top: 20px;
   }
   
+  .highlight {
+    font-family: 'Anton', sans-serif;
+    }
+  
   .data {
     font-family: sans-serif, Arial, Helvetica, sans-serif;
     color: blue;
   }
 
-  
