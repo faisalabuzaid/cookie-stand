@@ -1,0 +1,39 @@
+* {
+  font-family: 'Roboto Mono', monospace;
+  }
+  body {
+    background-color: #f3f3f3;
+  }
+  header {
+    background-color: rgb(207, 111, 33);
+    padding: 20px;
+  }
+  
+  header h1 {
+    color: #eee;
+    text-align: center;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  main h2 {
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: revert;
+  }
+  main section ul {
+    list-style: inside;
+  }
+  
+  img {
+    margin-top: 20px;
+  }
+  
+  .data {
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    color: blue;
+  }
+
+  
