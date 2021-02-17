@@ -124,3 +124,9 @@ table, th, td {
   table-layout: fixed; 
   width: 50px; 
 }
+
+#shops {
+margin-left: 330px;
+margin-top: 30px;
+margin-bottom: 20px;
+}
