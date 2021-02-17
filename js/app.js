@@ -107,19 +107,57 @@ const tokyo= new Shops('Tokyo', 3, 24, 1.2);
 const dubai= new Shops('Dubai', 11, 38, 3.7);
 const paris= new Shops('Paris', 20, 38, 2.3);
 const lima= new Shops('Lima', 2, 16, 4.6);
-tableHeader();
-seattle.calcTotalCookies();
-seattle.render();
 
-tokyo.calcTotalCookies();
-tokyo.render();
 
-dubai.calcTotalCookies();
-dubai.render();
+// seattle.calcTotalCookies();
+// seattle.render();
 
-paris.calcTotalCookies();
-paris.render();
+// tokyo.calcTotalCookies();
+// tokyo.render();
 
-lima.calcTotalCookies();
-lima.render();
-tableFooter();
+// dubai.calcTotalCookies();
+// dubai.render();
+
+// paris.calcTotalCookies();
+// paris.render();
+
+// lima.calcTotalCookies();
+// lima.render();
+
+
+
+function renderTable(){
+  tableHeader();
+
+  for (let i = 0; i < allLocations.length; i++) {
+    allLocations[i].calcTotalCookies();
+    allLocations[i].render();
+  }
+  
+
+
+}
+
+renderTable();
+
+  
+  const form = document.getElementById("cookieform");
+form.addEventListener("submit", function(event){
+  event.preventDefault();
+  console.log(event.target);
+
+  const location = event.target.location.value; 
+  const min = event.target.minCustomers.value;
+  const max = event.target.maxCustomers.value;
+  const avg = event.target.avgPercustomer.value;
+
+  const shops = new Shops(location,min,max,avg);
+
+  shops.calcTotalCookies();
+  shops.render();
+  tableFooter();
+
+
+  form.reset();
+
+})
