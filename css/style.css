@@ -127,10 +127,14 @@ table, th, td {
   width: 80px;
   height: 40px;
   color: var(--primary-color);
+  background-color: blanchedalmond;
 }
 
+
+
 #shops {
-margin-left: 120px;
+text-align: center;
+margin-left: 30px;
 margin-top: 30px;
 margin-bottom: 20px;
 }
@@ -163,11 +167,11 @@ input[type=submit]:hover {
 
 #formsec {
   text-align: center;
-  margin-left: 250px;
   width: 70%;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  margin-left: 180px;
 }
 
 legend {
@@ -176,3 +180,4 @@ legend {
   margin-bottom: 15px;
   color: var(--primary-color);
 }
+
